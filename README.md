@@ -29,6 +29,7 @@ $ mysql -u flask -h flaskinsight.crrvqov9dgv2.us-east-2.rds.amazonaws.com -p
 Enter password: 
 mysql> CREATE DATABASE BucketList;
 ```
+> Replace the username and hostname (end point) from your own RDS configurations
 
 Edit the `config.py` file to include the username, password, and db name you entered earlier, in the format:
 
