@@ -202,6 +202,8 @@ When the uploading finishes, you’ll see:
 
 **2019-10-01 20:11:17    INFO    Successfully launched environment: flask-aws-tutorial-dev**
 
+You can checkout the running app in here - http://flaskawsdemoapp.us-west-2.elasticbeanstalk.com/
+
 And that’s it. Hopefully this helps you get off and running with AWS. Finally, making updates to your site is easy. Whenever you update a file, simply type
 
 ```
