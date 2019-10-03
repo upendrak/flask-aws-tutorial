@@ -75,17 +75,17 @@ $ pip install awsebcli
 
 Once that finishes installing, we can initialize and deploy our Flask app. We could do this using our AWS root access. However, let’s follow [AWS Best Practices](http://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html) and create a new user for this demo. This will keep our master ID and secret key (which you should have stored somewhere) safe.
 
-To create a new user, go to the AWS Console and search for Identity and Access Management (IAM) and select “Create New Users”
+**Step1:** To create a new user, go to the AWS Console and search for Identity and Access Management (IAM) and select “Create New Users”. We’ll only need one user for this demo, and we’ll call him/her “flaskdemo”. Select “programmatic access” click “Next” for permissions.
 
-We’ll only need one user for this demo, and we’ll call him/her “flaskdemo”:
-
-Select “programmatic access” click “Next” for permissions.
-
-We’ve created a user, but they have no permissions (just like our database). Let’s grant this user admin access. On this screen, select “Create group:”
+**Step2:** We’ve created a user, but they have no permissions (just like our database). Let’s grant this user admin access. On this screen, select “Create group:”
 
 In the next screen, search for “administrator” from the preconfigured options:
 
-Many of these policies are specialized for specific AWS services. For simplicity choose the first one, “AdministratorAccess” and click “Create group”.
+Many of these policies are specialized for specific AWS services. For simplicity choose the first one, “AdministratorAccess”, give a name to the admin ("admin") and click “Create group”.
+
+**Step3**: Create tags (optional)
+
+**Step 4**: Review
 
 Now we can create our admin user
 
